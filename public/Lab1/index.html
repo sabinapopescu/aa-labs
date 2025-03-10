@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fibonacci Performance Comparison</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 16px;
+      }
+      #root {
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- React will render into this root element -->
+    <div id="root"></div>
+
+    <!-- React and ReactDOM (Development versions) -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- Babel for in-browser transpilation of JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Recharts CDN (depends on D3) -->
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+
+    <!-- Your React code: make sure the type is "text/babel" -->
+    <script type="text/babel" src="./script.js"></script>
+  </body>
+</html>
